@@ -9,9 +9,11 @@
 
 I am a creative person and had a quite difficult time choosing what kind of app to make. I wanted to make a weather app because I would be able to easily showcase some nice animations, colors, and modern geometric shapes. But a weather app is something a beginner should be able to create. Because I want to challenge myself and furthermore solidify my react skillset, I have decided to create an app that would give a person their morning dose of information. That would include the weather, the top news of that day, and finance information. I plan to have a favorites section for the weather so the user could add their favorite cities.
 
-## API
+## APIs
 
-
+https://api.openweathermap.org/data/2.5/weather?zip=75062&units=imperial&appid=1985501bf0f791f03cc70a2310831353
+https://api.nytimes.com/svc/topstories/v2/home.json?api-key=9VMOP8IrKT4l8pLUv1lmdIXrmNM9lRAs
+https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&apikey=XL2AEYFAQA8NA5O5
 
 ```
 {
@@ -51,13 +53,29 @@ I am a creative person and had a quite difficult time choosing what kind of app 
 "item_type": "Article",
 "updated_date": "2020-06-26T10:51:32-04:00",
 ```
-
+```
+Meta Data": {
+"1. Information": "Daily Prices (open, high, low, close) and Volumes",
+"2. Symbol": "AAPL",
+"3. Last Refreshed": "2020-06-25",
+"4. Output Size": "Compact",
+"5. Time Zone": "US/Eastern"
+},
+"Time Series (Daily)": {
+"2020-06-25": {
+"1. open": "360.7000",
+"2. high": "365.0000",
+"3. low": "357.5700",
+"4. close": "364.8400",
+"5. volume": "34055508"
+},
+```
 
 ## Wireframes
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [wireframes]()
+- [wireframes](https://imgur.com/a/ikijy1A)
 
 ## Components
 
@@ -73,8 +91,8 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 | News | Renders the front page news |
 | NewsListItem | Renders the news title/author/data |
 | Stocks | Displays the down industrial average |
-| StocksHi | Displays the days top gainers |
-| StocksLow| displays the days top losers |
+| Crypto | Displays the days top cryptos |
+| Forex| displays the worlds top currencies |
 | OptionsPage | Displays the favorite weather cities and display options|
 
 
@@ -111,8 +129,8 @@ Unless otherwise noted, time is listed in hours:
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create React app and files for all components | H | 1 | 40min | 40min |
-| Navbar | H | 1 | 45min | 45min |
+| Create React app and files for all components | H | 1 |  |  |
+| Navbar | H | 1 |  |  |
 | Set up React routing | H | 1 |  |  |
 | Set up API calls | H | 3 |  |  |
 | Create weather component | H | 3 |  |  |
@@ -122,13 +140,13 @@ Unless otherwise noted, time is listed in hours:
 | Top news list item | H | 3 |  |  |
 | Stocks component | H | 2 |  |  |
 | Stocks list item | H | 2 |  |  |
-| Top Gains List | H | 2 |  |  |
-| Top Losses list | H | 2 |  |  |
-| Material Weather Pictures | H |  |  |  |
+| Crypto List | H | 2 |  |  |
+| Forex list | H | 2 |  |  |
+| Material Weather Pictures | H | 2 |  |  |
 | Options page | M | 3 |  |  |
 | Loading Page | M | 3 |  |  |
 | Widget Layout | L | 4 |  |  |
-| Total | H | 45 |  |  |
+| Total | H | 39 |  |  |
 
 ## Additional Libraries
 
