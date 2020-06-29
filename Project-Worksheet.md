@@ -7,7 +7,7 @@
 
 ## Project Description
 
-I am a creative person and had a quite difficult time choosing what kind of app to make. I wanted to make a weather app because I would be able to easily showcase some nice animations, colors, and modern geometric shapes. But a weather app is something a beginner should be able to create. Because I want to challenge myself and furthermore solidify my react skillset, I have decided to create an app that would give a person their morning dose of information. That would include the weather, the top news of that day, and finance information. I plan to have a favorites section for the weather so the user could add their favorite cities.
+While project planning I had a quite difficult time choosing what kind of app to make. I wanted to make a weather app because I would be able to easily showcase some cool animations, colors, and modern geometric shapes. But a weather app is something a beginner should be able to create. Because I want to challenge myself and furthermore solidify my react skillset, I have decided to create an app that would give a person their morning dose of information. That would include the weather, the top news of that day, and finance information. I plan to have a favorites section for the weather so the user could add their favorite cities.
 
 ## APIs
 
