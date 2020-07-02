@@ -180,4 +180,7 @@ span {
   .minmax{
     padding: 15px;
   }
+  .fiveDayRows li{
+    padding: 8px 2px;
+  }
 }
