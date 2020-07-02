@@ -7,7 +7,7 @@
 
 ## Project Description
 
-While project planning I had a quite difficult time choosing what kind of app to make. I wanted to make a weather app because I would be able to easily showcase some cool animations, colors, and modern geometric shapes. But a weather app is something a beginner should be able to create. Because I want to challenge myself and furthermore solidify my react skillset, I have decided to create an app that would give a person their morning dose of information. That would include the weather, the top news of that day, and finance information. I plan to have a favorites section for the weather so the user could add their favorite cities.
+While project planning I had a quite difficult time choosing what kind of app to make. I wanted to make a weather app because I would be able to easily showcase some cool animations, colors, and modern geometric shapes. But a weather app is something a bit simple. Because I want to challenge myself and furthermore solidify my react skillset, I have decided to create an app that would give a person their morning dose of information. That would include the weather, the top news of that day, and finance information if I am able to. I plan to have a favorites section for the weather so the user could add their favorite cities.
 
 ## APIs
 
@@ -106,20 +106,20 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Fully functional site displaying the weather and the front page news
 - Weather List
 - Allow users to search and favorite their cities of choice
-- Display the current weather, 7 day forecast, wind speed, day hi/low etc.
-- Display the article picture, author, title
-- Navbar with Options Page to control what to display
-- Finance area that displays the top stocks of the Dow
-- Top gaining stock, top losing stocks
+- Display the current weather, 5 day forecast, wind speed, day hi/low etc.
+- Widget Layout of Page
+
 
 
 #### PostMVP 
-- 
+- Display the article picture, author, title
+- Finance area that displays the top stocks of the Dow
+- Top gaining stock, top losing stocks
 - Animations
 - Material design weather pictures (day/night thunderstorm picture, day/night cloudy picture, day/night clear skies) 
 - Animated loading page
 - custom cursor
-- Widget Layout of Page
+
 
 
 
@@ -129,24 +129,22 @@ Unless otherwise noted, time is listed in hours:
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create React app and files for all components | H | 1 |  |  |
-| Navbar | H | 1 |  |  |
-| Set up React routing | H | 1 |  |  |
-| Set up API calls | H | 3 |  |  |
-| Create weather component | H | 3 |  |  |
-| create weather favorites list | H | 3 |  |  |
-| Create 7 day forcast list | H | 2 |  |  |
+| Create React app and files for all components | H | 1 | 2 |  |
+| Navbar | H | 1 | 2 |  |
+| Set up React routing | H | 1 | 3 |  |
+| Set up API calls | H | 3 | 5 |  |
+| Create weather component | H | 3 | 5 |  |
+| create weather favorites list | H | 3 | 5 |  |
+| Create 5 day forcast list | H | 2 | 4 |  |
 | Top news Component | H | 2 |  |  |
 | Top news list item | H | 3 |  |  |
 | Stocks component | H | 2 |  |  |
 | Stocks list item | H | 2 |  |  |
 | Crypto List | H | 2 |  |  |
 | Forex list | H | 2 |  |  |
-| Material Weather Pictures | H | 2 |  |  |
-| Options page | M | 3 |  |  |
-| Loading Page | M | 3 |  |  |
-| Widget Layout | L | 4 |  |  |
-| Total | H | 39 |  |  |
+| Material Weather Pictures | H | 2 | 2 |  |
+| Widget Layout | L | 4 | 4 |  |
+| Total | H | 36 | 32 |  |
 
 ## Additional Libraries
 
