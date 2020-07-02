@@ -154,5 +154,8 @@ Use this section to include a brief code snippet of functionality that you are p
 
 
 ```
+let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+let d = new Date();
+let n = days[d.getDay()]
 
 ```
