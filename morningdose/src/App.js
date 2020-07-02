@@ -2,16 +2,26 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Weather from './Components/Weather/Weather';
-import News from './Components/News/News';
+import { Route, Link } from "react-router-dom";
+import About from './Components/About'
+
 
 
 
 function App() {
   return (
     <div className="App">
-      <h1>MORNING DOSE</h1>
-      <Weather />
-      <News />
+      <Link to='/'>
+        <h2 className='Logo'>The<br/> Weather<br/> App</h2>
+      </Link>
+      <Route exact path='/' component={Weather}/>
+      <Link className='aboutLink' to='/About'>
+      <footer><h1>About</h1></footer>
+        </Link>
+
+      
+      <Route exact path='/About' component={About}/>
+
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 function FiveDay({listData}) {
 
@@ -18,42 +18,91 @@ let fiveDayTempsThree = <h1>Loading</h1>
 let fiveDayTempsFour = <h1>Loading</h1>
 let fiveDayTempsFive = <h1>Loading</h1>
 
+// const newCall = async (icon) => {
+//   const iconUrl =   `https://openweathermap.org/img/wn/${icon}@2x.png`
+
+//   const res = await fetch(iconUrl)
+//   const json = await res.json()
+//   console.log('json',json)
+// }
+
 
 if(listData[0]) {
   fiveDayTempsOne = rowOne.map(obj => {
-  return<li>{Math.round(obj.main.temp)}</li>
+    console.log(obj.weather[0].icon)
+
+
+  return<ul className='fiveDayRows'>
+        <img src={  `https://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`
+} alt="boohoo" className="smallImages"/>
+        
+        <li>{Math.round(obj.main.temp)}°</li>
+        <li>{obj.dt_txt.slice(11,16)}</li>
+        </ul>
+  
+
   })
 }
 if(listData[0]) {
   fiveDayTempsTwo = rowTwo.map(obj => {
-    return<li>{Math.round(obj.main.temp)}</li>
-  })
+    return<ul className='fiveDayRows'>
+    <img src={  `https://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`
+} alt="boohoo" className="smallImages"/>
+<li>{Math.round(obj.main.temp)}°</li>
+    <li>{obj.dt_txt.slice(11,16)}</li>
+    </ul>
+
+
+})
 }
 if(listData[0]) {
   fiveDayTempsThree = rowThree.map(obj => {
-    return<li>{Math.round(obj.main.temp)}</li>
-  })
+    return<ul className='fiveDayRows'>
+    <img src={  `https://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`
+} alt="boohoo" className="smallImages"/>
+<li>{Math.round(obj.main.temp)}°</li>
+    <li>{obj.dt_txt.slice(11,16)}</li>
+    </ul>
+
+
+})
 }
 if(listData[0]) {
   fiveDayTempsFour = rowFour.map(obj => {
-    return<li>{Math.round(obj.main.temp)}</li>
-  })
+    return<ul className='fiveDayRows'>
+    <img src={  `https://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`
+} alt="boohoo" className="smallImages"/>
+<li>{Math.round(obj.main.temp)}°</li>
+    <li>{obj.dt_txt.slice(11,16)}</li>
+    </ul>
+
+
+})
 }
 if(listData[0]) {
   fiveDayTempsFive = rowFive.map(obj => {
-    return<li>{Math.round(obj.main.temp)}</li>
-  })
+    return<ul className='fiveDayRows'>
+    <img src={  `https://openweathermap.org/img/wn/${obj.weather[0].icon}@2x.png`
+} alt="boohoo" className="smallImages"/>
+<li>{Math.round(obj.main.temp)}°</li>
+    <li>{obj.dt_txt.slice(11,16)}</li>
+    </ul>
+
+
+})
 }
+let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat','Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+let d = new Date();
+let n = days[d.getDay()]
     
   return (
     <div className="FiveDay">
-        <h1>FiveDay</h1>
-        <ul class="row">{fiveDayTempsOne}</ul>
-        <ul class="row">{fiveDayTempsTwo}</ul>
-        <ul class="row">{fiveDayTempsThree}</ul>
-        <ul class="row">{fiveDayTempsFour}</ul>
-        <ul class="row">{fiveDayTempsFive}</ul>
-        <h6>hi</h6>
+        <h2>Five Day Forecast</h2>
+  <ul class="row"><span className='date'>{n}</span>{fiveDayTempsOne}</ul>
+  <ul class="row"><span className='date'>{days[d.getDay()+1]}</span>{fiveDayTempsTwo}</ul>
+          <ul class="row"><span className='date'>{days[d.getDay()+2]}</span>{fiveDayTempsThree}</ul>
+          <ul class="row"><span className='date'>{days[d.getDay()+3]}</span>{fiveDayTempsFour}</ul>
+          <ul class="row"><span className='date'>{days[d.getDay()+4]}</span>{fiveDayTempsFive}</ul>
     </div>
   );
 }
